@@ -47,6 +47,29 @@ ul {
 	transition: top .6s;
 	z-index: 99;
 }
+
+/* PORTOFOLIO */
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+	-ms-flex: 50%; /* IE10 */
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 4px;
+}
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
 /*NAV*/
 header {
 	display: inline;
@@ -120,15 +143,22 @@ main {
 	border-radius: 10px;
 }
 aside{
+	background-image: url('../image/profile_wrap.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	flex-basis: 30%;
 	margin: 20px;
-	background-color: #100e17;
 	color: white;
-	padding: 40px 30px;
 	border-radius: 20px;
 	height: max-content;
 }
-.profile {
+.description {
+	margin-top: 20rem;
+	padding: 0px 30px 20px 30px;
+	background: linear-gradient(180deg, rgba(22,22,22,0.10127801120448177) 2%, rgba(0,0,0,0.27494747899159666) 20%, rgba(0,0,0,0.3113620448179272) 100%);
+}
+/* .profile {
 	padding: 50px;
 }
 .profile img {
@@ -136,7 +166,7 @@ aside{
 	padding: 10px;
 	border: 10px solid black;
 	border-radius: 50%;
-}
+} */
 .description h1 {
 	font-size: xx-large;
 	margin-bottom: -15px;
@@ -171,6 +201,10 @@ aside{
 .timeline:hover {
 	color: white;
 }
+.timeline:hover .year {
+	color: #0bceaf;
+	transform: scale(1.1);
+}
 .timeline:hover .timelineBar::after{
 	border: 3px solid #0bceaf;
 }
@@ -179,7 +213,7 @@ aside{
 	width: 1px;
 	position: relative;
 	top: 21px;
-	margin-right: 90px;
+	margin-right: 50px;
 	margin-left: 10px;
 }
 .timelineBar::after {
@@ -197,8 +231,9 @@ aside{
 	display: flex;
 }
 .year {
-	margin-right: 40px; 
-	width: 110px;
+	/* margin-right: 40px;  */
+	width: 180px;
+	transition: all .8s;
 }
 .timelineContent p, .year p {
 	margin: 0;
@@ -234,12 +269,62 @@ aside{
 .contacts div {
 	padding: 15px;
 }
+
+.group-portofolio {
+	display: flex;
+}
+.card {
+	width: 100px;
+	flex-basis: 50%;
+	border-radius: 20px;
+	margin: 5px;
+}
 footer {
 	background-color: #100e17;
 	padding: 20px;
 	text-align: center;
 	color: white;
 }
+
+/* PORTOFOLIO */
+.thumb-portofolio:hover{
+	z-index: 99;
+	background-color: red;
+	color: rgba(245, 222, 179, 0.521);
+}
+.container-image {
+	margin-bottom: 20px;
+	position: relative;
+	padding: 40px;
+    display: block;
+	overflow: hidden;
+	background-color:wheat;
+}
+.thumb-image {
+	width: 100%;
+	transition: all .3s;
+}
+.thumb-portofolio:hover .thumb-image {
+	transform: scale(1.1);
+}
+.image-text {
+	color: black;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    z-index: 1;
+    padding: 10px 25px;
+	transition: all .3s;
+}
+.thumb-portofolio:hover .image-text {
+	position: absolute;
+	bottom: 0;
+	transform: scale(1);
+	background-color: rgba(245, 222, 179, 0.555);
+}
+
+
+
 /*MEDIA QUERIES*/
 
 /*TABLET*/
@@ -277,6 +362,7 @@ footer {
 		border-radius: 20px;
 	}
 }
+
 
 /*SMARTPHONE*/
 @media screen and (max-width: 480px) {
@@ -330,8 +416,11 @@ footer {
 	.partial {
 		margin-bottom: 15px;
 	}
+	.timelines {
+		margin-bottom: 3rem;
+	}
 	.timelineBar {
-		margin-right: 50px;
+		margin-right: 40px;
 	}
 	.timelineContent {
 		flex-direction: column;
@@ -350,6 +439,14 @@ footer {
 	footer p {
 		font-size: 13px;
 		margin : 0;
+	}
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	  }
+	.thumb-portofolio{
+		flex-basis: 50%;
 	}
 }
 

@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- menyesuaikan heading saat berada di device dengan pixel kecil -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/lightbox.min.css">
 	<title>agiladisaputro</title>
 	<link rel="icon" type="text/css" href="assets/image/logo.ico">
 </head>
@@ -13,9 +15,11 @@
 			<ul id="navResponsive" class="navbar">
 				<li class="brand"><a href=""><b>AGILADISAPUTRO</b></a></li>
 				<li><a href="#content" class="">ABOUT</a></li>
-				<li><a href="#skills">SKILLS</a></li>
 				<li><a href="#education">EDUCATION</a></li>
+				<li><a href="#skills">SKILLS</a></li>
+				<li><a href="#photography">PHOTOGRAPHY</a></li>
 				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="portofolio.html">PORTOFLIO</a></li>
 				<li class="icon-bar"><a href="javascript:void(0);" onclick="addResponsive()"><i class="fa fa-bars"></i></a></li>
 			</ul>
 		</nav>
@@ -28,8 +32,54 @@
 					I'm Agil, from Bekasi - Indonesia. i'm just Programmer enthusiast, love to talk about Technology, Photography, Videography, and everything about workout. From here i will explain about my life and my experience.
 				</p>
 				<br>
-				<a class="btn" href="#skills" onclick="go()">Get's Started</a>
+				<a class="btn" href="#education">Get's Started</a>
 			</article>
+			<article id="education">
+				<h2>Education</h2>
+				<div class="timelines">
+					<div class="timeline">
+						<div class="timelineBar"></div> <!-- end timelineBar -->
+						<section>
+							<div class="year">
+								<p><small>2019 - PRESENT</small></p>
+							</div>
+							<div class="timelineContent">
+								<p>Bachelor's Degree - Informatics</p>
+								<p>UPNV - Yogyakarta</p>
+								<p><small class="typeEducation">(formal education)</small></p>
+							</div> <!-- end timelineContent -->
+						</section>
+					</div> <!-- end timeline -->
+					<div class="timeline">
+						<div class="timelineBar"></div> <!-- end timelineBar -->
+						<section>
+							<div class="year">
+								<p><small>SEP - OCT 2017</small></p>
+							</div>
+							<div class="timelineContent">
+								<p>Web Developer</p>
+								<p>BLK - Bekasi</p>
+								<p><small class="typeEducation">(informal education)</small></p>
+							</div> <!-- end timelineContent -->
+						</section>
+					</div> <!-- end timeline -->
+					<div class="timeline">
+						<div class="timelineBar"></div> <!-- end timelineBar -->
+						<section>
+							<div class="year">
+								<p><small>2014 - 2017</small></p>
+							</div>
+							<div class="timelineContent">
+								<!-- <p> -->
+									<p>Senior High School 6</p>
+									<p>Kota Bekasi</p>
+									<p><small class="typeEducation">(formal education)</small></p>
+								<!-- </p> -->
+							</div> <!-- end timelineContent -->
+						</section>
+					</div> <!-- end timeline -->
+				</div> <!-- end timelines -->
+			</article> <!-- end education -->
 			<article id="skills">
 				<h2>Skills</h2>
 				<div class="skillGraph">
@@ -96,53 +146,33 @@
 						</div> <!-- end partial -->
 					</div> <!-- end technicall -->
 				</div> <!-- end skillGraph -->
-			</article> <!-- end about -->
-			<article id="education">
-				<h2>Education</h2>
-				<div class="timelines">
-					<div class="timeline">
-						<div class="timelineBar"></div> <!-- end timelineBar -->
-						<section>
-							<div class="year">
-								<p><small>2019 - PRESENT</small></p>
-							</div>
-							<div class="timelineContent">
-								<p>Bachelor's Degree - Informatics</p>
-								<p>UPNV - Yogyakarta</p>
-								<p><small class="typeEducation">(formal education)</small></p>
-							</div> <!-- end timelineContent -->
-						</section>
-					</div> <!-- end timeline -->
-					<div class="timeline">
-						<div class="timelineBar"></div> <!-- end timelineBar -->
-						<section>
-							<div class="year">
-								<p><small>SEP - OCT 2017</small></p>
-							</div>
-							<div class="timelineContent">
-								<p>Web Developer</p>
-								<p>BLK - Bekasi</p>
-								<p><small class="typeEducation">(informal education)</small></p>
-							</div> <!-- end timelineContent -->
-						</section>
-					</div> <!-- end timeline -->
-					<div class="timeline">
-						<div class="timelineBar"></div> <!-- end timelineBar -->
-						<section>
-							<div class="year">
-								<p><small>2014 - 2017</small></p>
-							</div>
-							<div class="timelineContent">
-								<!-- <p> -->
-									<p>Senior High School 6</p>
-									<p>Kota Bekasi</p>
-									<p><small class="typeEducation">(formal education)</small></p>
-								<!-- </p> -->
-							</div> <!-- end timelineContent -->
-						</section>
-					</div> <!-- end timeline -->
-				</div> <!-- end timelines -->
-			</article> <!-- end education -->
+			</article> <!-- end skills -->
+			<article id="Photography">
+				<h2>Portofolio</h2>
+				<div class="group-portofolio">
+					<div class="row">
+						<div class="column">
+							<a href="./assets/image/foto1.jpg" data-lightbox="gallery" data-title="Terjun payung" style="cursor: pointer; outline: 20px;">
+								<img src="./assets/image/foto1.jpg" alt="gallery" width="100%">
+							</a>
+							<a href="./assets/image/foto2.jpg" data-lightbox="gallery" data-title="Ranca upas">
+								<img src="./assets/image/foto2.jpg" alt="">
+							</a>
+						</div> <!-- end column -->
+						<div class="column">
+							<a href="./assets/image/foto5.JPG" data-lightbox="gallery" data-title="Indah Yogyakarta" style="cursor: pointer; outline: 20px;">
+								<img src="./assets/image/foto5.JPG" alt="gallery" width="100%">
+							</a>
+							<a href="./assets/image/foto4.jpg" data-lightbox="gallery" data-title="Lagoon avenue">
+								<img src="./assets/image/foto4.jpg" alt="">
+							</a>
+							<a href="./assets/image/foto3.jpg" data-lightbox="gallery" data-title="Upacara kemerdekaan - 2019">
+								<img src="./assets/image/foto3.jpg" alt="">
+							</a>
+						</div> <!-- end column -->
+					</div> <!-- end row -->
+				</div>
+			</article> <!-- end portofolio -->
 			<article class="contacts" id="contact">
 				<h2>Contact</h2>
 				<form>
@@ -161,9 +191,9 @@
 			</article> <!-- end contact -->
 		</div> <!-- end content -->
 		<aside>
-			<div class="profile">
+			<!-- <div class="profile">
 				<img src="assets/image/profile.jpg">
-			</div>
+			</div> -->
 			<div class="description">
 				<h1>Agil Adi Saputro</h1>
 				<h4>Web Developer</h4>
@@ -182,11 +212,13 @@
 		</aside> <!-- end aside -->
 	</main> <!-- end main -->
 	<footer>
-		<p>Copyright &copy 2020 - www.agiladisaputro.com</p>
+		<p>Copyright &copy 2020 - Made with &#10084;</p>
 		<p><b>AGIL ADI SAPUTRO</b></p>
 	</footer> <!-- end footer -->
 
 	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script src="./assets/js/jquery-2.2.3.min.js"></script>
+	<script src="./assets/js/lightbox-plus-jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/50874f4c74.js"></script>
 </body>
 </html>
