@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/lightbox.min.css">
 	<title>agiladisaputro</title>
 	<link rel="icon" type="text/css" href="assets/image/logo.ico">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -26,7 +27,7 @@
 	</header>
 	<main>
 		<div class="content" id="content">
-			<article class="landPage">
+			<article class="landPage" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300">
 				<h1><span class="markTitle">Hello,</span> welcome to my page</h1>
 				<p>
 					I'm Agil, from Bekasi - Indonesia. i'm just Programmer enthusiast, love to talk about Technology, Photography, Videography, and everything about workout. From here i will explain about my life and my experience.
@@ -34,7 +35,7 @@
 				<br>
 				<a class="btn" href="#education">Get's Started</a>
 			</article>
-			<article id="education">
+			<article id="education" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1800">
 				<h2>Education</h2>
 				<div class="timelines">
 					<div class="timeline">
@@ -80,7 +81,7 @@
 					</div> <!-- end timeline -->
 				</div> <!-- end timelines -->
 			</article> <!-- end education -->
-			<article id="skills">
+			<article id="skills fixed-aos" class="container-fluid" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1800">
 				<h2>Skills</h2>
 				<div class="skillGraph">
 					<div class="technicall">
@@ -147,7 +148,7 @@
 					</div> <!-- end technicall -->
 				</div> <!-- end skillGraph -->
 			</article> <!-- end skills -->
-			<article id="Photography">
+			<article id="photography" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1800">
 				<h2>Portofolio</h2>
 				<div class="group-portofolio">
 					<div class="row">
@@ -173,7 +174,7 @@
 					</div> <!-- end row -->
 				</div>
 			</article> <!-- end portofolio -->
-			<article class="contacts" id="contact">
+			<article class="contacts" id="contact" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1800">
 				<h2>Contact</h2>
 				<form>
 					<section>
@@ -198,9 +199,9 @@
 				<h1>Agil Adi Saputro</h1>
 				<h4>Web Developer</h4>
 				<ul class="information">
-					<li><i class="fa fa-envelope"></i> <a href="mailto:agiladisaputro@gmail.com">agiladisaputro@gmail.com</a></li>
-					<li><i class="fa fa-phone"></i> <a href="tel:+6285959317376">+62 859 5931 7376</a></li>
-					<li><i class="fa fa-map-marker"></i> <address>Jl.Mandar Blok DD 6 No.23 kel.Pekayon Jaya, Kec.Bekasi Selatan Kota Bekasi 17148</address></li>
+					<li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:agiladisaputro@gmail.com">agiladisaputro@gmail.com</a></li>
+					<li><i class="fa fa-phone fa-fw"></i> <a href="tel:+6285959317376">+62 859 5931 7376</a></li>
+					<li><i class="fa fa-map-marker fa-fw"></i> <address>Jl.Mandar Blok DD 6 No.23 kel.Pekayon Jaya, Kec.Bekasi Selatan Kota Bekasi 17148</address></li>
 				</ul>
 				<ul class="social-media">
 					<li><a href="https://github.com/agiladis/"><i class="fa fa-github"></i></a></li>
@@ -220,5 +221,9 @@
 	<script src="./assets/js/jquery-2.2.3.min.js"></script>
 	<script src="./assets/js/lightbox-plus-jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/50874f4c74.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
